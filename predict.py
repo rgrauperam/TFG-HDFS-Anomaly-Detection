@@ -56,15 +56,15 @@ def predecir_secuencia(secuencia_eventos):
     print(f"Secuencia: {secuencia_eventos}")
     print(f"Probabilidad de fallo: {probabilidad*100:.2f}% -> {estado}")
 
-# ==========================================
-# 🧪 ZONA DE PRUEBAS: ¡Pon tus secuencias aquí!
-# ==========================================
+
+# Pruebas manuales con secuencias de eventos
+
 print("Iniciando predicciones manuales...\n")
 
 # Prueba 1: Una secuencia típica normal
 predecir_secuencia(['E1', 'E5', 'E5', 'E5', 'E22'])
 
-# Prueba 2: Le metemos el error fatal que descubriste antes (E427)
+# Prueba 2: Error fatal (E427)
 predecir_secuencia(['E1', 'E5', 'E427', 'E5'])
 
 # Prueba 3: ¡Borrador inesperado!
